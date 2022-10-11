@@ -16,7 +16,7 @@ ALE proszę za pomocą tej strony tak samo przesłać rozwiązania, jak na zaję
 
 6. Za pomocą polecenia curl, ściągnąć plik z podanego poniżej adresu i zapisać pod nazwą zad_6
 
-7 (konieczne do uzyskania 2 punktów!) Na zakończenie, nadal nie zmieniając kartoteki, wykonać polecenia: 
+7. (konieczne do uzyskania 2 punktów!) Na zakończenie, nadal nie zmieniając kartoteki, wykonać polecenia: 
 cat zad_6 >> virtual
 uname -a >> virtual 
 po czym plik virtual należy przesłać jako rozwiązanie zadania.
