@@ -1,0 +1,22 @@
+Polecenia w tym pliku mają pierwszeństwo przed tym, co jest na stronie
+
+ alioth.uwb.edu.pl/so-lab/
+
+ALE proszę za pomocą tej strony tak samo przesłać rozwiązania, jak na zajęciach nr I. Za rozwiązania niezmiennie maksymalnie można dostać 4 punkty, można je przesłać raz i aby dostać wszystkie punkty- proszę je przesłać w trakcie zajęć.
+
+1. W kartotece domowej (/Users/Student/<login>/) utworzyć podkartotekę install.
+
+2. (opcjonalnie, może jest u Państwa w folderze Downloads) Do utworzonej kartoteki np. przy pomocy programu curl pobrać obraz dysku instalacyjnego systemu Linux Mint dostępny pod adresem: https://alioth.uwb.edu.pl/so/mint/linuxmint-20.2-xfce-64bit.iso.
+
+3. W programie VirtualBox utworzyć nową maszynę wirtualną o nazwie Mint-<login> i zainstalować na niej system ze ściągniętego obrazu.
+
+4. W zainstalowanym systemie stworzyć konto robocze o nazwie <login>.
+
+5. W kartotece domowej użytkownika <login> na maszynie wirtualnej przy pomocy wybranego edytora utworzyć plik tekstowy o nazwie virtual i zanotować w nim zauważone różnice pomiędzy systemami host (macOS) i guest (Linux).
+
+6. Za pomocą polecenia curl, ściągnąć plik z podanego poniżej adresu i zapisać pod nazwą zad_6
+
+7 (konieczne do uzyskania 2 punktów!) Na zakończenie, nadal nie zmieniając kartoteki, wykonać polecenia: 
+cat zad_6 >> virtual
+uname -a >> virtual 
+po czym plik virtual należy przesłać jako rozwiązanie zadania.
