@@ -18,4 +18,4 @@
 
     - komentarze proszę ewentualnie dodawać poprzedzone symbolem `#` 
 
-
+Zadania przesłać proszę przesłać [na tą stronę, co wcześniej](https://alioth.uwb.edu.pl/so-lab/)
