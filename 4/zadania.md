@@ -13,7 +13,7 @@
 
  1. `head, tail`: Zapisać dwie pierwsze linie pliku `system1` do nowego pliku `system2`, a następnie dopisać dwie ostatnie linie pliku `system1    ` do `system2`.
 
- 1. `sort, uniq`: Uporządkowaną alfabetycznie listę wszystkich linii występujących w obydwu plikach `system1` oraz `system2` zapisać w pliku `words.sorted`, a ich ilość (bez powtórzeń) w pliku `words.nr` (zadanie można rozwiązać, korzystając z polecenia `sort` z odpowiednią opcją lub łącząc 2 polecenia: `sort` oraz `uniq`).
+ 1. `sort, uniq`: Uporządkowaną alfabetycznie listę wszystkich linii występujących w obydwu plikach `system` (**NIE `system1`) oraz `system2` zapisać w pliku `words.sorted`, a ich ilość (bez powtórzeń) w pliku `words.nr` (zadanie można rozwiązać, korzystając z polecenia `sort` z odpowiednią opcją lub łącząc 2 polecenia: `sort` oraz `uniq`).
 
  1. `curl, wc`(z odpowiednią opcją) : za pomocą polecenia `curl`, ściągnąć zawartość tego samego linku, co na zajęciach nr 2 (z podanego poniżej     adresu) i **nie zapisując jej na dysku** -- policzyć ile znaków wchodzi w skład tej zawartości. Wynik -- czyli liczbę znaków -- zapisać proszę pod nazwą `thing_nchar.txt`.
 
