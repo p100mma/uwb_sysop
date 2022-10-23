@@ -9,11 +9,11 @@
 
  1. `less`: Odnaleźć w pliku `/etc/passwd` linię zawierającą opis administratora `root`, po czym przekopiować ją z terminala i dopisać poleceniem     `echo` jako kolejną linię pliku `user`.
 
- 1. `cat`: Połączyć zawartość plików `/etc/passwd` oraz `/etc/group` w jeden plik o nazwie `system`, po czym utworzyć jego kopię zawierającą numery linii na początku (opcja `-n`) w pliku pod nazwą `system1`.
+ 1. `cat`: Połączyć zawartość plików `/etc/passwd` oraz `/etc/group` w jeden plik o nazwie `system`, po czym utworzyć jego kopię zawierającą numery linii na początku (opcja `-n`) w pliku pod nazwą `system_numbers`.
 
- 1. `head, tail`: Zapisać dwie pierwsze linie pliku `system1` do nowego pliku `system2`, a następnie dopisać dwie ostatnie linie pliku `system1    ` do `system2`.
+ 1. `head, tail`: Zapisać dwie pierwsze linie pliku `system` do nowego pliku `system2`, a następnie dopisać dwie ostatnie linie pliku `system` do `system2`.
 
- 1. `sort, uniq`: Uporządkowaną alfabetycznie listę wszystkich linii występujących w obydwu plikach `system` (**NIE `system1`) oraz `system2` zapisać w pliku `words.sorted`, a ich ilość (bez powtórzeń) w pliku `words.nr` (zadanie można rozwiązać, korzystając z polecenia `sort` z odpowiednią opcją lub łącząc 2 polecenia: `sort` oraz `uniq`).
+ 1. `sort, uniq, wc`: Uporządkowaną alfabetycznie listę wszystkich linii występujących w obydwu plikach `system` (**NIE `system_numbers`**) oraz `system2` zapisać w pliku `lines.sorted`, a ich ilość (bez powtórzeń) w pliku `lines.nr` (drugie podzadanie można rozwiązać, korzystając z polecenia `sort` z odpowiednią opcją w połączeniu z `wc` lub łącząc 3 wymienione polecenia. Co prawda liczbę linii bez powtórzeń można wydedukować bez używania pliku `lines.sorted`, ale chodzi tutaj o przetestowanie umiejętności usuwania duplikatów z posortowanej listy ).
 
  1. `curl, wc`(z odpowiednią opcją) : za pomocą polecenia `curl`, ściągnąć zawartość tego samego linku, co na zajęciach nr 2 (z podanego poniżej     adresu) i **nie zapisując jej na dysku** -- policzyć ile znaków wchodzi w skład tej zawartości. Wynik -- czyli liczbę znaków -- zapisać proszę pod nazwą `thing_nchar.txt`.
 
