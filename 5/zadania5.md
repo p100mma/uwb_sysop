@@ -7,7 +7,7 @@
 
  1. W  `/Users/Student/<login>/` **utworzyć podkartotekę `files` i w niej wykonać kolejne kroki zadania**. 
  
- 1. Pobrać archiwum `LOGIN.tar` z poniższego linku i umieścić w ww. folderze `files`. **`LOGIN` należy zamienić na swój login, np. `piosto.tar`**: 
+ 1. Pobrać archiwum `LOGIN.tar` z poniższego linku (lub z repozytorium z treścią zadań) i umieścić w ww. folderze `files`. **`LOGIN` należy zamienić na swój login, np. `piosto.tar`**: 
 
     -  `https://raw.githubusercontent.com/p100mma/uwb_sysop/main/5/LOGIN.tar`
 
