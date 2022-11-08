@@ -15,22 +15,22 @@
 
  1. W `files` stworzyć proszę folder `pack` i skopiować do niego zawartość archiwum wypakowanego w poprzednim punkcie (czyli plik `LOGIN.txt`, gdzie j.w. `LOGIN` trzeba zastąpić swoim loginem). Następnie, należy odnaleźć pierwszy według porządku alfabetycznego plik w `/usr/bin`, którego nazwa rozpoczyna się od pierwszej litery zawartej w wypakowanym wcześniej pliku `LOGIN.txt`. Odnaleziony plik proszę też skopiować do folderu `/Users/Student/<login>/files/pack/`. 
 
- 1. Proszę utworzyć kopię zapasową `pack` np. nazwaną `pack2`. Następnie, proszę utworzyć archiwum za pomocą programu `tar`, nazwane `pack.tar`, zawierające folder `pack` oraz plik `LOGIN.txt` (wszystko w ramach folderu `files`, j.w. co do zamiany `LOGIN`). Po utworzeniu archiwum, proszę usunąć folder `pack` oraz odwtorzyć jego zawartość za pomocą stworzonego wcześniej archiwum `pack.tar`. W przypadku pomyłki, proszę podmienić kopię zapasową `pack2` na `pack` i zrobić zadanie ponownie.  
+ 1. Proszę utworzyć kopię zapasową `pack` np. nazwaną `pack2`. Następnie, proszę utworzyć archiwum za pomocą programu `tar`, nazwane `pack.tar`, zawierające folder `pack` oraz jego zawartość. Po utworzeniu archiwum, proszę usunąć folder `pack` oraz odwtorzyć jego zawartość za pomocą stworzonego wcześniej archiwum `pack.tar`. W przypadku pomyłki, proszę podmienić kopię zapasową `pack2` na `pack` i zrobić zadanie ponownie.  
  
  1. Proszę utworzyć kopię zapasową `pack` np. nazwaną `pack2`, jeśli jej nie utworzono wcześniej. Tak samo, proszę stworzyć kopię zapasową pliku `LOGIN.txt`. Następnie, za pomocą programu `cpio`, proszę utworzyć 2 archiwa i wykonać analogiczne czynności, jak wyżej: 
 
-- archiwum `pack.cpio`, zawierające TYLKO folder `pack` (wraz z zawartością!)
+	- archiwum `pack.cpio`, zawierające TYLKO folder `pack` (wraz z zawartością!)
 
-- archiwum `LOGIN.cpio`, zawierające TYLKO plik `LOGIN.txt`.
+	- archiwum `LOGIN.cpio`, zawierające TYLKO plik `LOGIN.txt`.
 
-- Po utworzeniu archiwów, proszę usunąć folder `pack` oraz plik `LOGIN.txt` oraz odwtorzyć je za pomocą stworzonych wcześniej archiwów `pack.cpio` oraz `LOGIN.cpio`. W przypadku pomyłki, proszę podmienić kopie zapasowe `pack` oraz `LOGIN` i zrobić zadanie ponownie.  
+	- Po utworzeniu archiwów, proszę usunąć folder `pack` oraz plik `LOGIN.txt` oraz odwtorzyć je za pomocą stworzonych wcześniej archiwów `pack.cpio` oraz `LOGIN.cpio`. W przypadku pomyłki, proszę podmienić kopie zapasowe `pack` oraz `LOGIN` i zrobić zadanie ponownie.  
  
  1. Proszę skompresować archiwum `pack.tar` za pomocą `gzip`.
  
 
- 1. Proszę stworzyć skompresowane archiwum `pack.tgz`, zawierające tą samą zawartość, co `pack.tar`, ale tylko za pomocą narzędzia `tar`. **Wskazówka:** trzeba podać odpowiednią opcję przy tworzeniu archiwum, hasło do wyszukania w manualu to `compress`). 
+ 1. Proszę stworzyć skompresowane archiwum `pack.tgz`, zawierające tą samą zawartość, co `pack.tar`, ale tylko za pomocą narzędzia `tar`. **Wskazówka:** trzeba podać odpowiednią opcję przy tworzeniu archiwum, hasło do wyszukania w manualu narzędzia `tar` to `compress`). 
  
- 1. Proszę w folderze `files` utworzyć folder `symlinks`. Potem, proszę stworzyć łącze symboliczne do folderu `pack` w ramach `symlinks`, nazwane `link_pack`, tzn: łącze `/Users/Student/<login>/files/symlinks/link_pack` ma wskazywać na `/Users/Student/<login>/files/pack`. Potem, w ramach folderu `files`, proszę stworzyć archiwum `link_pack.tar`, podając jako zawartość utworzone wcześniej łącze symboliczne, ale w taki sposób, aby archiwum zawierało oryginalny folder `pack`, a nie łącze symboliczne (**Wskazówka**: trzeba podać komendzie `tar` specjalną opcję, hasło do wyszukania w manualu to `links`. Jeśli uda się stworzyć jedną komendą archiwum w folderze `files`, zawierające folder `pack` z wykorzystaniem łącza symbolicznego oraz **nie zawierające** nadrzędnego `symlinks`, do oceny końcowej za dzisiaj doliczę dodatkowy punkt). 
+ 1. Proszę w folderze `files` utworzyć folder `symlinks`. Potem, proszę stworzyć łącze symboliczne do folderu `pack` w ramach `symlinks`, nazwane `link_pack`, tzn: łącze `/Users/Student/<login>/files/symlinks/link_pack` ma wskazywać na `/Users/Student/<login>/files/pack`. Potem, w ramach folderu `files`, proszę stworzyć archiwum `link_pack.tar`, podając jako zawartość utworzone wcześniej łącze symboliczne, ale w taki sposób, aby archiwum zawierało oryginalny folder `pack`, a nie łącze symboliczne (**Wskazówka**: trzeba podać komendzie `tar` specjalną opcję, hasło do wyszukania w manualu `tar` to `links`. Jeśli uda się stworzyć jedną komendą archiwum w folderze `files`, zawierające folder `pack` z wykorzystaniem łącza symbolicznego oraz **nie zawierające** nadrzędnego `symlinks`, do oceny końcowej za dzisiaj doliczę dodatkowy punkt). 
  
  1. Wszystkie kolejne polecenia niezbędne do wykonania całego zadania należy umieścić w pliku tekstowym o nazwie `files.txt`, umieszczonym w folderze `files` (czyli `\Users\Student\<login>\files\files.txt`:
 
