@@ -12,7 +12,7 @@
 
 1. (to najlepiej zrobić na koniec) Proszę za pomocą połączenia narzędzia `grep` oraz innego, wybranego narzędzia powłoki:
 
-    - odnaleźć pliki w folderze /usr/bin, do których użytkownik ma uprawnienia odczytu i uruchamiania, a wszyscy inni ("inni" jak i grupa posiadająca uprawnienia do pliku) mają wszystkie uprawnienia: odczytu, zapisu i uruchamiania,
+    - odnaleźć pliki w folderze /usr/bin, do których użytkownik ma uprawnienia odczytu, zapisu jak i uruchamiania, a wszyscy inni ("inni" jak i grupa posiadająca uprawnienia do pliku) mają uprawnienia: odczytu, uruchamiania, ale nie zapisu,
 
     - listę tych plików **z dołączonymi numerami linii** proszę zapisać w pliku `bin_ur-x_list.txt`. *Najważniejsze będzie uzyskanie porządanego wyniku określonego w poprzednim zdaniu polecenia. Można wykorzystać *`ls -l`*,* `cat` *z odpowiednią opcją, operator przekierowania pipeline* `|` *, ale można to zrobić na inne sposoby.*
 
