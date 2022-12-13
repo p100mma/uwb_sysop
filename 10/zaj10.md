@@ -30,24 +30,24 @@ Skrypt powinien od momentu uruchomienia dopisywać do pliku `minion-PID` wiadomo
 
 1. Napisz skrypt `keeper.sh`, przyjmujący 3 parametry (od razu piszę umowną nazwę kolejnych parametrów pozycyjnych):
     - `n_children` - liczba podprocesów do uruchomienia przez `keeper.sh`,
-    - `freq` ,
+    - `freq_sub` - częstotliwość tworzenia podprocesów ,
     - `n_msg` - dwa ostatnie parametry dla do przekazania dla podprocesów, o podobnej interpretacji jak w punkcie nr 1.
 
-`keeper.sh` powinien co `freq` sekund tworzyć podproces wykonujący program `minion.sh` z parametrami `freq` i `n_msg`. Program `keeper.sh` powinien tworzyć te podprocesy do momentu utworzenia `n_children` podprocesów. Następnie, program powinien zaczekać, aż wszystkie podprocesy zakończą swoją pracę i w momencie odnotowania zakończenia danego podrocesu- powinien dopisać do pliku `necro` datę odnotowania zdarzenia zakończenia danego podprocesu oraz jego numer PID, przedzielone spacją. Jak każdy podproces zakończy działanie - program ma usunąć wszystkie pliki `minion-PID`, dla każdego `PID` będącego ID podprocesu utworzonego przez `keeper`a.
+`keeper.sh` powinien co `freq_sub` sekund tworzyć podproces wykonujący program `minion.sh` z parametrem `n_msg` równym `n_msg` (wszystkie mają wysłać tyle wiadomości, ile podał użytkownik jako parametr nr 3 do `keeper.sh`) oraz parametrem `freq` równym `freq_sub*j`, gdzie `j` to numer kolejnego wykonywanego podprocesu. Program `keeper.sh` powinien tworzyć te podprocesy do momentu utworzenia `n_children` podprocesów. Następnie, program powinien zaczekać, aż wszystkie podprocesy zakończą swoją pracę i w momencie odnotowania zakończenia danego podrocesu- powinien dopisać do pliku `necro` datę odnotowania zdarzenia zakończenia danego podprocesu oraz jego numer PID, przedzielone spacją. Jak każdy podproces zakończy działanie - program ma usunąć wszystkie pliki `minion-PID`, dla każdego `PID` będącego ID podprocesu utworzonego przez `keeper`a.
 
 Przykład ostatniego zadania, tak jak pierwszego:
 
-    1. Program `keeper.sh` jest uruchomiony z określonymi parametrami `n_children=3, `freq=3`, `n_msg=2`.
+    1. Program `keeper.sh` jest uruchomiony z określonymi parametrami `n_children=3, `sub_freq=3`, `n_msg=2`.
 
     2. `keeper.sh` tworzy podproces wykonujący `minion.sh` z parametrem `freq=3` oraz `n_msg=2`. Przydzielono mu `PID=111`.
 
     3. mijają 3 sekundy.
     
-    4. `keeper.sh` tworzy podproces wykonujący `minion.sh` z parametrem `freq=3` oraz `n_msg=2`. Przydzielono mu `PID=222`.
+    4. `keeper.sh` tworzy podproces wykonujący `minion.sh` z parametrem `freq=6`  oraz `n_msg=2`. Przydzielono mu `PID=222`.
     
     5. mijają 3 sekundy.
     
-    6. `keeper.sh` tworzy podproces wykonujący `minion.sh` z parametrem `freq=3` oraz `n_msg=2`. Przydzielono mu `PID=333`.
+    6. `keeper.sh` tworzy podproces wykonujący `minion.sh` z parametrem `freq=9` oraz `n_msg=2`. Przydzielono mu `PID=333`.
     
     7. Program `keeper.sh` czeka po kolei na wszystkie utworzone podprocesy.
     
