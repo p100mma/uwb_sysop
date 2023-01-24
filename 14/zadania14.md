@@ -15,7 +15,7 @@
 		- trzeba dokonać kompilacji kodu źródłowego za pomocą kompilatora np. `gcc`,
 		- umieścić skompilowany plik wykonywalny we wskazanej lokalizacji,
 		- dodać ścieżkę do folderu zawierającego ww. plik wykonywalny do zmiennej środowiskowej `PATH` (umownie: nie zmieniamy tak jak należy treści pliku `.bashrc` lub `zshrc`)
-		- ustalić dla pliku wykonywalnego TYLKO następujące uprawnienia: odczytu i zapisu, TYLKO dla właściciela (usera instalującego) oraz grupy użytkownika instalującego program (czyli po prostu dla pola uprawnień group). wszystkie inne uprawnienia mają być wyzerowane. 
+		- ustalić dla pliku wykonywalnego TYLKO następujące uprawnienia: wykonywania i zapisu, TYLKO dla właściciela (usera instalującego) oraz grupy użytkownika instalującego program (czyli po prostu dla pola uprawnień group). wszystkie inne uprawnienia mają być wyzerowane. 
 
 
 Jako rozwiązanie trzeba przesłać skompresowane archiwum `zaj14.tar.gz` zawierające pliki: `my_installer`, `README` oraz skompilowany program;  [na tą samą stronę, co wcześniej](https://alioth.uwb.edu.pl/cgi-bin/so-lab/rejestr).
